@@ -1,0 +1,14 @@
+p {
+    font-family: Verdana;
+    font-size: 23px;
+    width: 30%;
+    border-bottom: 1px solid rgba(0,150, 200, 0.6);
+    margin-left: 1.66%;
+    padding-bottom: 10px;
+}
+
+img {width: 30%;
+    height: 300px;
+    float: left;
+    margin: 1.66%;
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register-OrthoWorx Training</title>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+	<div class="login-page">
+
+	<div class="form">
+
+		<form class="register-form">
+			<input type="text" placeholder="Name"/>
+			<input type="text" placeholder="Username"/>
+			<input type="text" placeholder="Password"/>
+			<button>Create</button>
+			<p class="message"> Already Registered? <a href="main.html"> Login</a></p>
+
+		</form>
+
+
+
+	</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<script>
+	$('.message a').click(function(){
+	$('form').animate({height:"toggle",opacity:"toggle"}, "slow");
+	}
+	</script>
+</body>
+</html>

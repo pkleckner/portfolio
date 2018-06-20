@@ -4,12 +4,10 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Raleway', sans-serif;
 font-family: 'Poppins', sans-serif;*/
 
-/* 
-	**********
+	/* **********
 	I usually do this to both the html and the body elements, as a general reset. 
 	That way I can be sure that everything will take up all of the screen. 
-	**********
-*/
+	********** */
 html, 
 body 
 {
@@ -17,8 +15,7 @@ body
 	height: 100%;
 }
 
-/*  
-	**********
+	/* **********
 	Adding CSS to the * symbol tells it to apply that style to EVERYTHING.
 	It can still be overridden in the rest of the code, but it's a good way
 	to set a base style.
@@ -42,8 +39,7 @@ body
 
 	Also, I reset the margin and padding on everything to 0. 
 	This helps prevent me from running into any unexpected spacing issues later.
-	**********
-*/
+	********** */
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -74,46 +70,40 @@ nav
 	width: 100%;	
 }
 
-/* 
-	**********
+	/* **********
 	Floating the entire <ul> to the right.
-	**********
-*/
+	********** */
 nav ul {
 	float: right; /* Floating the entire parent container instead of individual elements can make things easier to manage and align. */
 	height: 100%; /* Make sure that the unordered list <ul> takes up the complete vertical space that appears in the <nav> tag. */
 }
 
-/* 
-	**********
+	/* **********
 	Aligning nav elements horizontally.
 	You can also apply styling to the <li> and 
 	style for different "states" as well, like
 	you might due when you hover over an <a> tag.
-	**********
-*/
+	********** */
 nav ul li {
 	display: inline-block; /* Inline-block mixes the benefits of block styling and inline alignment. */
 	height: 100%; /* Make sure that the list items <li> take up the complete vertical space that appears in the <ul> tag. */
 	background-color: transparent; /* Make sure that the default background color is whatever the <nav> navbar is. */
 }
 
-/* 
-	**********
+	/* **********
 	As mentioned previously, you can style just about
 	any element based on its "state", such as if you
 	are hovering over it or not.
-	**********
-*/
+	********** */
 nav ul li:hover {
-	background-color: red; /* Setting a generic background color for when you hover over the <li> tag. */
+	background-color: red;  /* Setting a generic background color for when you hover over the <li> tag. */
 }
 
 
 /* the links */
 nav a
 {
-	/* float: right; */ /* Killed this in favor of floating the entire grandparent <ul> container. */
+	/* float: right; */  /* Killed this in favor of floating the entire grandparent <ul> container. */
 	display: block;
 	color: #DDD6E1;
 	text-align: center;
@@ -125,7 +115,7 @@ nav a
 
 nav a:hover
 {
-	/* background: #ddd; */ /* background lights up grey */ /* Killed this in favor of styling the parent <li> tags. */
+	/* background: #ddd; */ /* background lights up grey */  /* Killed this in favor of styling the parent <li> tags. */
 	color: black; /*text goes black */	
 }
 

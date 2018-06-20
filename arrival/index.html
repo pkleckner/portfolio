@@ -9,12 +9,62 @@
 
 <body>
 
-<div class="navbar">
-	<a href="#">Shop</a>
-	<a href="#">Contact Us</a>
+	<!--
+		**********
+		Using the new <nav> tag saves from having to use classes to identify everything.
+		There is nothing "wrong" with using a div with a class name -- it does the same thing,
+		but it's good practice to use the newer tags. So it's a good habit to get into.
+		**********
+	-->
+	<nav>
+		<!--
+			**********
+			It would probably be a good idea to use an unordered list <ul> tag here,
+			and put each of the links in an list item <li> tag. 
+
+			This has a few benefits. Currently each of the <a> tags are floated right.
+			The <a> tags are being affected by that float in the order they appear in the
+			code, from top to bottom. The browser will read the "Shop" link first, and it 
+			will apply the float:right from the CSS to that. Then it finds the "Contact Us"
+			link, and it will apply the float:right to that one as well.
+
+			But because "Shop" was affected first, it will take the right-most spot, and
+			"Contact Us" will float beside it. The result is:
+
+				Contact Us    Shop
+
+			when it should be the other way around:
+
+				Shop     Contact Us
+
+			Wrapping these in a <ul> tag will let you float that entire <ul> section to the right,
+			but the actual link/items inside of it won't be affected individuall by a float.
+			**********
+		-->
+		<ul>
+			<li>
+				<a href="#">Shop</a>
+			</li>
+			<li>
+				<a href="#">Contact Us</a>
+			</li>
+		</ul>
+	</nav>
 	
-</div>
-	
+	<!--
+		**********
+		Upcoming Considerations:
+
+		Wrap everything after the <nav> in a <div class="container"> to help keep everything all together.
+		
+		Create two columns, one for both of the <div class="main"> divs, and one for the <div class="extra">.
+		Using the new tag <section> may be a good to create those columns may be a good idea, since the 
+		<section> tag is intended for large chunks of a page.
+
+		It may also be a good idea to use <article> in place of <div class="main">. The <article> tag
+		is intended for multiple chunks of content that have similar styling, such as news items or blog posts.
+		**********
+	-->
 	<div class="main">
 		<h2>Movie of the Week: Annihilation</h2>
 		<img src="images/image01.jpg" width="400" height="200" alt="">
@@ -47,6 +97,12 @@
 	</div>
 <div class="extra">
 	<h3>Latest News</h3>
+		<!--
+			**********
+			I again think it would be a good idea to use an unordered list <ul> tag here
+			like what was done with the navbar. It can be styled.
+			**********
+		-->
 		<div class="section">
 			<a href="#"> Videos</a>
 			<a href="#"> Games</a>

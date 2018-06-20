@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* CSS Document font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Poppins', sans-serif;*/
+
+body 
+{
+	margin: 0;
+	
+
+}
+p {
+	font-family: 'Quicksand', sans-serif;
+}
+h2
+{
+	font-family: 'Poppins', sans-serif;
+	
+}
+h3
+{
+	color: #61BAC1;
+	font-family: 'Roboto', sans-serif;
+
+}
+/*The navbar */
+.navbar 
+{
+	overflow: hidden;
+	background-color: #000000;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	
+	
+	
+}
+/* the links */
+.navbar a
+{
+	float: right;
+	display: block;
+	color: #DDD6E1;
+	text-align: center;
+	padding: 20px;
+	text-decoration: none;
+	font-size: 20px; 
+    font-family: 'Quicksand', sans-serif;
+
+	
+}
+
+.navbar a:hover
+{
+	background: #ddd; /* background lights up grey */
+	color: black; /*text goes black */
+	
+}
+
+
+.main
+{	width: 50%;
+	margin-top: 100px;
+	margin-left: 60px;
+	margin-right: 20px;
+	padding-right: 5px; 
+	border: 1px solid;
+	border-left-color: #FFFFFF;
+	border-top-color: #FFFFFF;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #888888;
+	float: left;
+	
+	
+}
+
+.extra
+{
+	display: block;
+	float: right;
+	width: 30%;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 0;
+	padding-right: 5px;
+	text-align: center;
+}
+
+.section
+{	
+	margin-top: 100px;
+	width: 25%;
+	font-size: 15px;
+	margin: 30px;
+	
+		
+}
+.section a 
+{
+	display: block;
+	color: #969696;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+	font-size: 15px; 
+    font-family: 'Quicksand', sans-serif; 
+		
+}
+.section a:hover
+{
+	background: rgb(100,200,250,.07);
+	color: #212020;
+	
+	
+		
+}
